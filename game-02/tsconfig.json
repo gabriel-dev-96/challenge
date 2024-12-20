@@ -1,12 +1,22 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
+        "target": "es2015",
         "strict": true,
         "noImplicitAny": false,
-        "sourceMap": false
+        "sourceMap": false,
+        "lib": ["es2015"],
+        "skipLibCheck": true,
+        "outDir": "./build",
+        "rootDir": "./",
+        "rootDirs": ["./app", "./test"]
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "build"
+    ],
+    "include": [
+        "app/**/*",
+        "test/**/*"
     ]
 }
