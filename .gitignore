@@ -36,3 +36,8 @@ vendor
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Build folders
+# -----------------------------------
+**/build/
+build/
